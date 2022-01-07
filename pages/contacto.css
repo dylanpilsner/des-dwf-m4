@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.background-color-container {
+  background-color: #000;
+}
+
+@media (min-width: 769px) {
+  .background-color-container {
+    background: linear-gradient(
+      107.17deg,
+      #004969 29.35%,
+      rgba(96, 16, 115, 255) 78.73%
+    );
+  }
+}
+
+.header-container {
+}
+.contact-content {
+}
+.footer-content {
+}

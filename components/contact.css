@@ -16,8 +16,13 @@
   }
 }
 
-/* .title {
-} */
+.title--form {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+}
+
 @media (min-width: 769px) {
   .title--form {
     margin-top: 20px;
@@ -36,7 +41,7 @@
 
 @media (min-width: 769px) {
   .contact__form {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 40px;
     max-width: 376px;
   }
 }
