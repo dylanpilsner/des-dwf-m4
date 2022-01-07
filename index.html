@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/logo-1.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./components/header.js"></script>
+    <script defer src="./components/contact.js"></script>
+    <script defer src="./components/footer.js"></script>
+    <script defer src="./pages/index.js"></script>
+    <title>Dylan Pilsner</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./components/contact.css" />
+    <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="./components/header.css" />
+  </head>
+  <body>
+    <div class="background-image-container">
+      <div class="header-container"></div>
+      <section class="welcome">
+        <h1 class="welcome__title">Hola!</h1>
+        <h2 class="title">Mi nombre es Dylan</h2>
+      </section>
+    </div>
+    <section class="about-me-cont"></section>
+    <section class="services-cont">
+      <div class="services">
+        <h2 class="title title--black">Mis servicios</h2>
+        <div class="services__card-content"></div>
+      </div>
+    </section>
+    <section class="contact-content"></section>
+    <section class="footer-content"></section>
+    <template id="about-me__template">
+      <div class="about-me">
+        <img src="./images/selfpic.png" alt="Foto" class="about-me__pic" />
+        <div class="about-me__introduce">
+          <h2 class="about-me__title"></h2>
+          <p class="about-me__text">
+            <!-- Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Ad, totam? Velit ipsam hic a eligendi. Laboriosam
+            eveniet quibusdam quas itaque quia ex atque et, enim vero! Enim
+            voluptatum alias temporibus. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Tempora doloribus, deserunt nulla fuga nihil aut
+            sit voluptatibus rem neque quibusdam. Debitis, est! Exercitationem
+            totam consequuntur velit fuga qui quas deserunt! -->
+          </p>
+        </div>
+      </div>
+    </template>
+    <template id="services__card-template">
+      <div class="services__card">
+        <img src="" alt="" class="services__card-img" />
+        <div class="service__card-description">
+          <h2 class="services__card-title"></h2>
+          <p class="services__card-text"></p>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>

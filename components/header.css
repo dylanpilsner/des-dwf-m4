@@ -1,0 +1,107 @@
+.header {
+  background-color: rgba(25, 27, 31, 96%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  height: 92px;
+}
+
+@media (min-width: 769px) {
+  .header {
+    padding: 80px;
+  }
+}
+
+.header__logo {
+  height: 53px;
+}
+
+@media (min-width: 769px) {
+  .header__logo {
+    height: 80px;
+  }
+}
+
+.header__open-nav-menu {
+  width: 36px;
+  height: 32px;
+}
+
+@media (min-width: 769px) {
+  .header__open-nav-menu {
+    display: none;
+  }
+}
+
+.header__hamburger-top-bread {
+  background-color: #fff;
+  height: 6px;
+  border-radius: 3px;
+}
+.header__hamburger-patty {
+  background-color: #fff;
+  margin: 7px 0;
+  height: 6px;
+  border-radius: 3px;
+}
+.header__hamburger-bottom-bread {
+  background-color: #fff;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.header__desktop-nav-container {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .header__desktop-nav-container {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+  }
+}
+.header__desktop-nav-item {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.header__nav-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #191b1f;
+  display: none;
+}
+/* .header__close-nav-menu-cont {
+} */
+
+.header__close-nav-menu {
+  font-size: 80px;
+  color: #fff;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.header__nav-menu-item-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.header__nav-menu-item {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 60px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 48px;
+  text-shadow: 1px 1px 2px black;
+}
