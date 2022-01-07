@@ -4,9 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 25px;
-  /* height: 1px; */
   height: 100px;
-  /* height: 10px; */
 }
 
 @media (min-width: 769px) {
@@ -81,8 +79,6 @@
   background-color: #191b1f;
   display: none;
 }
-/* .header__close-nav-menu-cont {
-} */
 
 .header__close-nav-menu {
   font-size: 80px;

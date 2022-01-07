@@ -10,7 +10,6 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: initial; */
     padding: 100px 100px;
     height: 200px;
   }

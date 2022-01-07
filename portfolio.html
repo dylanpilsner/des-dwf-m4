@@ -12,14 +12,35 @@
       rel="stylesheet"
     />
     <script defer src="./components/header.js"></script>
-    <script defer src="./components/contact.js"></script>
     <script defer src="./components/footer.js"></script>
-    <script defer src="./pages/index.js"></script>
+    <script defer src="./pages/portfolio.js"></script>
     <title>Dylan Pilsner</title>
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./components/contact.css" />
+    <link rel="stylesheet" href="./pages/portfolio.css" />
     <link rel="stylesheet" href="./components/footer.css" />
     <link rel="stylesheet" href="./components/header.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="background-color-container">
+      <div class="header-container"></div>
+      <div class="portfolio-title-content">
+        <h1 class="portfolio-title">Portfolio</h1>
+      </div>
+    </div>
+    <section class="portfolio"></section>
+    <div class="footer-content"></div>
+    <template id="portfolio__card-template">
+      <div class="portfolio__card">
+        <img src="" alt="" class="portfolio__card-img" />
+        <div class="portfolio__card-description">
+          <h3 class="portfolio__card-title"></h3>
+          <p class="portfolio__card-text"></p>
+          <a
+            href="www.linkedin.com/in/dylan-pilsner"
+            class="portfolio__card-link"
+            >Ir al repositorio</a
+          >
+        </div>
+      </div>
+    </template>
+  </body>
 </html>

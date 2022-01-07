@@ -78,10 +78,8 @@ body {
 
 @media (min-width: 769px) {
   .about-me__introduce {
-    /* max-width: 610px; */
     align-items: flex-start;
     justify-content: center;
-    /* margin: 100px 50px; */
     margin: 0 auto;
   }
 }
@@ -120,21 +118,15 @@ body {
 }
 
 .services-cont {
-  /* background-color: #eee; */
   padding: 60px 0;
   background-color: #eeee;
 }
-/* .services {
-}
-.title {
-} */
 .title--black {
   color: #191b1f;
   text-shadow: 1px 1px 2px white;
 }
 .services__card-content {
   width: 100%;
-  /* margin-top: 50px; */
   margin: 50px auto 0;
   display: flex;
   flex-direction: column-reverse;
@@ -146,7 +138,6 @@ body {
 }
 
 .services__card {
-  /* MARCADOR */
   border: #000 2px;
   width: 100%;
   margin: 0 auto;
@@ -171,12 +162,10 @@ body {
 .services__card-title {
   font-family: "Poppins";
   font-weight: 700;
-  /* max-height: 35px; */
   height: 70px;
   font-size: 24px;
   color: #2c2c2c;
   text-align: center;
-  /* text-justify: center; */
 }
 .services__card-text {
   font-family: "Poppins";
