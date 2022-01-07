@@ -27,7 +27,7 @@ function footerComponent(el) {
       <img
         src="./images/github-logo.png"
         alt="github"
-        class="footer__social-media-logo"
+        class="footer__social-media-logo github-logo"
       />
     </a>
   </div>

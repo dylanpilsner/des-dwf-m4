@@ -4,12 +4,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 25px;
-  height: 92px;
+  /* height: 1px; */
+  height: 100px;
+  /* height: 10px; */
 }
 
 @media (min-width: 769px) {
   .header {
-    padding: 80px;
+    padding: 30px 30px 30px 70px;
   }
 }
 

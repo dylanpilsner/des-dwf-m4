@@ -11,8 +11,8 @@
     flex-direction: row;
     justify-content: space-between;
     /* align-items: initial; */
-    padding: 150px 100px;
-    height: 346px;
+    padding: 100px 100px;
+    height: 200px;
   }
 }
 
@@ -38,4 +38,8 @@
 
 .footer__social-media-logo {
   margin-bottom: 25px;
+}
+
+.github-logo {
+  margin-bottom: 0;
 }
