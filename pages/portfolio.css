@@ -42,7 +42,6 @@ body {
   font-size: 48px;
   font-weight: 700;
   color: #fff;
-  border: 0 !important;
 }
 
 @media (min-width: 769px) {
@@ -67,7 +66,6 @@ body {
 }
 
 .portfolio__card {
-  border: solid 4px #dbdbdb;
   margin-bottom: 30px;
 }
 .portfolio__card-img {
