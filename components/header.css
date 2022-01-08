@@ -5,11 +5,13 @@
   justify-content: space-between;
   padding: 0 25px;
   height: 100px;
+  width: 100%;
 }
 
 @media (min-width: 769px) {
   .header {
     padding: 30px 30px 30px 70px;
+    /* position: inherit; */
   }
 }
 
@@ -26,6 +28,9 @@
 .header__open-nav-menu {
   width: 36px;
   height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 769px) {
@@ -37,17 +42,20 @@
 .header__hamburger-top-bread {
   background-color: #fff;
   height: 6px;
+  width: 36px;
   border-radius: 3px;
 }
 .header__hamburger-patty {
   background-color: #fff;
   margin: 7px 0;
+  width: 36px;
   height: 6px;
   border-radius: 3px;
 }
 .header__hamburger-bottom-bread {
   background-color: #fff;
   height: 6px;
+  width: 36px;
   border-radius: 3px;
 }
 
@@ -77,19 +85,26 @@
 
 .header__nav-menu {
   position: absolute;
-  top: 0px;
+  top: -700px;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: #191b1f;
+  height: 100%;
+  background-color: rgba(25, 27, 31, 96%);
   display: none;
 }
 
-.header__close-nav-menu {
-  font-size: 80px;
-  color: #fff;
-  text-align: right;
-  margin-right: 20px;
+.header__nav-menu.open {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: caida;
+}
+
+@keyframes caida {
+  50%,
+  100% {
+    top: 100px;
+  }
 }
 
 .header__nav-menu-item-cont {
@@ -107,4 +122,92 @@
   font-weight: bold;
   font-size: 48px;
   text-shadow: 1px 1px 2px black;
+}
+
+/* Animación */
+.header__open-nav-menu div {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.header__open-nav-menu.open .header__hamburger-top-bread {
+  animation-name: top-animation;
+}
+
+@keyframes top-animation {
+  50%,
+  100% {
+    transform: translateY(6px) rotate(-50deg);
+    margin: 0;
+  }
+}
+
+.header__open-nav-menu.open .header__hamburger-patty {
+  animation-name: middle-animation;
+}
+
+@keyframes middle-animation {
+  50%,
+  100% {
+    margin: 0;
+    width: 1px;
+    opacity: 0;
+  }
+}
+
+.header__open-nav-menu.open .header__hamburger-bottom-bread {
+  animation-name: bottom-animation;
+}
+
+@keyframes bottom-animation {
+  50%,
+  100% {
+    transform: translateY(-6px) rotate(50deg);
+  }
+}
+
+.header__open-nav-menu div.header__hamburger-top-bread {
+  animation-name: top-animation-close;
+}
+
+@keyframes top-animation-close {
+  0% {
+    transform: translateY(6px) rotate(-50deg);
+  }
+  50%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.header__open-nav-menu div.header__hamburger-patty {
+  animation-name: middle-animation-close;
+}
+
+@keyframes middle-animation-close {
+  0% {
+    margin: 0;
+    width: 1px;
+    opacity: 0;
+  }
+
+  50%,
+  100% {
+    margin: 7px 0;
+    width: 36px;
+    opacity: 1;
+  }
+}
+
+.header__open-nav-menu div.header__hamburger-bottom-bread {
+  animation-name: bottom-animation-close;
+}
+@keyframes bottom-animation-close {
+  0% {
+    transform: translateY(-6px) rotate(50deg);
+  }
+  50%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
