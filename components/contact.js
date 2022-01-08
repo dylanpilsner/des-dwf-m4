@@ -33,6 +33,10 @@ function contactComponent(el) {
     const form = e.target;
     const data = { to: form.email.value, message: form.message.value };
 
+    form.name.value = "";
+    form.email.value = "";
+    form.message.value = "";
+
     fetch("https://apx-api.vercel.app/api/utils/dwf", {
       method: "post",
       body: JSON.stringify(data),
