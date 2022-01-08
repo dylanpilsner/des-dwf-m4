@@ -68,6 +68,11 @@
   font-family: "Poppins";
   font-weight: 400;
   font-size: 24px;
+  transition: 0.3s ease all;
+}
+
+.header__desktop-nav-item:hover {
+  font-size: 29px;
 }
 
 .header__nav-menu {

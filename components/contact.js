@@ -29,13 +29,6 @@ function contactComponent(el) {
   const myForm = componentEl.querySelector(".contact__form");
   const button = myForm.querySelector(".contact__form-button");
 
-  button.addEventListener("mousedown", (e) => {
-    e.target.style.backgroundColor = "#1a1a1a";
-  });
-  button.addEventListener("mouseup", (e) => {
-    e.target.style.backgroundColor = "#2c2c2c";
-  });
-
   myForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const form = e.target;
