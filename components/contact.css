@@ -103,6 +103,7 @@
   font-weight: 700;
   font-size: 16px;
   color: #dbdbdb;
+  cursor: pointer;
 }
 
 .contact__form-status {
