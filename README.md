@@ -1,1 +1,1 @@
-https://dylanpilsner.github.io/des-dwf-m4/portfolio.html
+https://dylanpilsner.github.io/portfolio/

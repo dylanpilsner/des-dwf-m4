@@ -28,29 +28,26 @@ function contactComponent(el) {
 
   const myForm = componentEl.querySelector(".contact__form");
 
-  myForm.addEventListener("submit", async (e) => {
+  myForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const form = new FormData(myForm);
+    const form = e.target;
+    const data = { to: form.email.value, message: form.message.value };
 
-    const response = await fetch("https://formspree.io/f/mbjwdeoz", {
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
       method: "post",
-      body: form,
-      headers: { Accept: "application/json" },
+      body: JSON.stringify(data),
+      headers: { "content-type": "application/json" },
     });
-
-    const status = myForm.querySelector(".contact__form-status");
-    if (myForm.message.value !== "" && myForm.email.value !== "") {
+    const status = form.querySelector(".contact__form-status");
+    if (data.to !== "" && data.message !== "") {
       status.textContent = "Su mensaje se ha enviado correctamente!";
-      myForm.name.value = "";
-      myForm.email.value = "";
-      myForm.message.value = "";
-    } else if (myForm.message.value == "" && myForm.email.value == "") {
+    } else if (data.to == "" && data.message == "") {
       status.textContent = "Por favor, complete los campos email y mensaje";
       status.style.color = "red";
-    } else if (myForm.email.value == "") {
-      status.textContent = "Por favor, ingrese su email";
+    } else if (data.to == "") {
+      status.textContent = "Por favor, ingrese un destinatario";
       status.style.color = "red";
-    } else if (myForm.message.value == "") {
+    } else if (data.message == "") {
       status.textContent = "Por favor, ingrese un mensaje";
       status.style.color = "red";
     }
