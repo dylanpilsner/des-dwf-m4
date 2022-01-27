@@ -44,6 +44,7 @@ function contactComponent(el) {
       myForm.name.value = "";
       myForm.email.value = "";
       myForm.message.value = "";
+      status.style.color = "green";
     } else if (myForm.message.value == "" && myForm.email.value == "") {
       status.textContent = "Por favor, complete los campos email y mensaje";
       status.style.color = "red";
